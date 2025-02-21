@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/work.css">
+    <script defer src="script.js"></script>
+    <title>Work Experience</title>
+</head>
+<body>
+    <!-- NAV PLACEHOLDER -->
+        <div id="nav-placeholder"></div>
+
+    <!-- WORK EXPERIENCE SECTION -->
+        <div id="work-exp">
+            <div class="mother-exp">
+                <div class="child-exp">
+                    <h3>AVSI FOUNDATION</h3>
+                    <div class="child2">
+                        <div class="child3">
+                            <h4>Role</h4>
+                            <ul>
+                                <li>IT Intern</li>
+                            </ul>
+                        </div>
+                        <div class="child3">
+                            <h4>Responsibilities</h4>
+                            <ul>
+                                <li>Networking</li>
+                                <li>Servicing Computers</li>
+                            </ul>
+                        </div>
+                        <div class="child3">
+                            <h4>Period</h4>
+                            <ul>
+                                <li>3 Months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="child-exp">
+                    <h3>SCI UGANDA</h3>
+                    <div class="child2">
+                        <div class="child3">
+                            <h4>Role</h4>
+                            <ul>
+                                <li>IT Intern</li>
+                            </ul>
+                        </div>
+                        <div class="child3">
+                            <h4>Responsibilities</h4>
+                            <ul>
+                                <li>Networking</li>
+                                <li>Servicing Computers</li>
+                            </ul>
+                        </div>
+                        <div class="child3">
+                            <h4>Period</h4>
+                            <ul>
+                                <li>1 Month</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="child-exp">
+                    <h3>LUIGI GIUSSANI HIGH SCHOOL</h3>
+                    <div class="child2">
+                        <div class="child3">
+                            <h4>Role</h4>
+                            <ul>
+                                <li>Lab Technician</li>
+                            </ul>
+                        </div>
+                        <div class="child3">
+                            <h4>Responsibilities</h4>
+                            <ul>
+                                <li>Networking</li>
+                                <li>Servicing Computers</li>
+                            </ul>
+                        </div>
+                        <div class="child3">
+                            <h4>Period</h4>
+                            <ul>
+                                <li>Currently there</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- REFEREES SECTION -->
+        <div id="referees">
+            
+        </div>
+
+
+    <!-- FOOTER PLACEHOLDER -->
+        <div id="footer-placeholder"></div>
+            <script>
+                //this is to fetch the nav file
+                fetch('nav.html')
+                .then(response => response.text()) // this gets the text content of the file
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navigation:', error));
+        
+                        
+                fetch('footer.html')
+                .then(response => response.text()) // this gets the text content of the file
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navigation:', error));
+        
+            </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <script defer src="script.js"></script>
+    <title>Navigation bar </title>
+</head>
+<body>
+        <!-- NAV div -->
+        <nav>
+            <div class="logo"><a href="index.html">Odong John Jonathan</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="work_experience.html">Work Experience</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="index.html#education">Education</a>
+                        <a href="hobbies.html">Hobbies</a>
+                        <a href="work_experience.html#referees">Referees</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    <!-- END OF NAV div -->
+
+    <!-- BLANK SPACE -->
+        <div class="blank-space"></div>
+
+    <!-- JS -->
+     <script>
+        let lastScrollTop = 0; // Store the last scroll position
+            const navbar = document.querySelector('nav'); // Select the navbar
+
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (currentScroll > lastScrollTop) {
+                    // If scrolling down, add the hidden class
+                    navbar.classList.add('hidden');
+                } else {
+                    // If scrolling up, remove the hidden class
+                    navbar.classList.remove('hidden');
+                }
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+            });
+     </script>
+</body>
+</html>

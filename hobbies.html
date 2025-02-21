@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hobbies.css">
+    <script defer src="script.js"></script>
+    <title>My Hobbies</title>
+</head>
+<body>
+
+    <!-- NAV PLACEHOLDER -->
+    <div id="nav-placeholder"></div>
+
+    <div id="hobbies">
+
+        <!-- List of hobbies -->
+        <div class="hobbies-section">
+            <h2>Hobbies</h2>
+            <p>Some of my favorite activities include:</p>
+            <ul>
+                <li>Riding motorcycles - I own a 250cc Simba UG Boss Sport</li>
+                <li>Working on IoT projects with Arduino and NodeMCU ESP8266</li>
+                <li>Learning new programming languages, currently improving my PHP skills</li>
+            </ul>
+        </div>
+
+        <!-- Song and video section -->
+        <div class="song_video">
+            <h3>Media</h3>
+            <div class="media">
+                <div class="child-media">
+                    <h4>Favorite Song:</h4>
+                    <audio controls>
+                        <source src="song.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="child-media">
+                    <h4>Favorite Music Video:</h4>
+                    <video controls width="300">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery section -->
+        <div class="gallery">
+            <h3>Gallery</h3>
+            <div class="pics">
+                <img src="images/g1.jpg" alt="Image 1" >
+                <img src="images/g3.jpg" alt="Image 2" >
+                <img src="images/g2.jpg" alt="Image 3" >
+        </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        //this is to fetch the files i want to import into this file
+        fetch('nav.html')
+        .then(response => response.text()) // this gets the text content of the file
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+                    
+        fetch('footer.html')
+        .then(response => response.text()) // this gets the text content of the file
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+    </script>
+</body>
+</html>

@@ -3,134 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odong John Jonathan CV</title>
+    <meta content="" description="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
+    <title>Odong John Jonathan CV</title>
 </head>
 <body>
 
-    <!-- NAV SECTION -->
-        <nav>
-            <div class="logo"><a href="index.html">Odong John Jonathan</a></div>
-            <ul class="nav-menu">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Work Experience</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">More</a>
-                    <div class="dropdown-content">
-                        <a href="#education">Education</a>
-                        <a href="#hobbies">Hobbies</a>
-                        <a href="#referees">Referees</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    <!-- END OF NAV SECTION -->
+    <!-- NAV PLACEHOLDER -->
+     <div id="nav-placeholder"></div>
 
-    <!-- BLANK SPACE -->
-    <div class="blank-space"></div>
-
-    <!-- BANNER SECTION -->
-    <div id="banner">
-        <div class="banner-text">
-            <h1>WELCOME TO MY CURRICULUM VITAE</h1>
+    <!-- BANNER div -->
+        <div id="banner">
+            <div class="banner-text">
+                <h1>WELCOME TO MY CURRICULUM VITAE</h1>
+            </div>
         </div>
-    </div>
-    <!-- END OF BANNER SECTION -->
+    <!-- END OF BANNER div -->
 
-
+    <!-- ABOUT ME AND EDUCATION SECTION -->
+        <div class="about-education">
+            <div id="about">
+                <h2>About Me</h2>
+                <p>Hi! I'm Odong John Jonathan, a passionate IT enthusiast currently pursuing a Diploma in Computer Science at Makerere University Business School. I have a strong interest in web development, data science, and IoT projects. My goal is to become a skilled data scientist while gaining experience in front-end and back-end development. I love working on real-world projects that solve practical problems.</p>
+            </div>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm Odong John Jonathan, a passionate IT enthusiast currently pursuing a Diploma in Computer Science at Makerere University Business School. I have a strong interest in web development, data science, and IoT projects. My goal is to become a skilled data scientist while gaining experience in front-end and back-end development. I love working on real-world projects that solve practical problems.</p>
-    </section>
+            <div id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>Diploma in Computer Science - Makerere University Business School</li>
+                    <li>High School - Completed with a strong foundation in mathematics and computer science</li>
+                </ul>
+            </div>
+        </div>
     
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Diploma in Computer Science - Makerere University Business School</li>
-            <li>High School - Completed with a strong foundation in mathematics and computer science</li>
-        </ul>
-    </section>
-    
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <table>
-            <tr>
-                <th>Company</th>
-                <th>Role</th>
-                <th>Years</th>
-            </tr>
-            <tr>
-                <td>AVSI Foundation Uganda</td>
-                <td>IT Intern</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Freelance Web Development</td>
-                <td>Front-End Developer</td>
-                <td>2023 - Present</td>
-            </tr>
-        </table>
-    </section>
-    
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <p>Some of my favorite activities include:</p>
-        <ul>
-            <li>Riding motorcycles - I own a 200cc Simba UG Boss Sport</li>
-            <li>Fitness and hill sprints for weight loss and muscle building</li>
-            <li>Working on IoT projects with Arduino and NodeMCU ESP8266</li>
-            <li>Learning new programming languages, currently improving my PHP skills</li>
-        </ul>
-        <p>Favorite Song:</p>
-        <audio controls>
-            <source src="song.mp3" type="audio/mpeg">
-        </audio>
-        <p>Favorite Music Video:</p>
-        <video controls width="300">
-            <source src="video.mp4" type="video/mp4">
-        </video>
-        <p>Gallery:</p>
-        <img src="image1.jpg" alt="Image 1" width="100">
-        <img src="image2.jpg" alt="Image 2" width="100">
-        <img src="image3.jpg" alt="Image 3" width="100">
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <label for="file">Upload File:</label>
-            <input type="file" id="file" name="file">
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <!-- EXPERIENCE div -->
+        <div id="experience">
+            <h2>Work Experience</h2>
+            <div class="mother-exp">
+                <div class="child-exp">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>AVSI Foundation</li>
+                        <li>SCI Uganda</li>
+                        <li>Luigi Giussani High School</li>
+                    </ul>
+                </div>
+                <div class="child-exp">
+                    <h3>Role</h3>
+                    <ul>
+                        <li>IT Intern</li>
+                        <li>IT Intern</li>
+                        <li>Lab technician </li>
+                    </ul>
+                </div>
+                <div class="child-exp">
+                    <h3>Period</h3>
+                    <ul>
+                        <li>3 months</li>
+                        <li>1 month</li>
+                        <li>Current one</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <script>
-        // Add this code to your script.js
-let lastScrollTop = 0; // Store the last scroll position
-const navbar = document.querySelector('nav'); // Select the navbar
-
-window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop) {
-        // If scrolling down, add the hidden class
-        navbar.classList.add('hidden');
-    } else {
-        // If scrolling up, remove the hidden class
-        navbar.classList.remove('hidden');
-    }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-});
-
-    </script>
+    <!-- FOOTER PLACEHOLDER -->
+        <div id="footer-placeholder"></div>
 </body>
 </html>
