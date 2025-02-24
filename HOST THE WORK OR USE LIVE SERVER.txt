@@ -1,1 +1,5 @@
 Open the work using live server or host it in order to show the navigation bar and the footer. I created different files of the nav and footer so that editing the work wont be complicated for me in future.
+
+
+
+https://odongjohnjonathan.github.io/MY-CV/ - this is a link to check the work online
