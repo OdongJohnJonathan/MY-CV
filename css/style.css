@@ -54,12 +54,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
+    overflow: hidden;
 }
 
 .about-education div {
     flex: 1;
     min-width: 300px;
     margin: 10px;
+    overflow: hidden;
 }
 
 #experience {
@@ -69,6 +71,7 @@ body {
     border-radius: 20px;
     padding: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 .mother-exp {
@@ -76,12 +79,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    overflow: hidden;
 }
 
 .child-exp {
     flex: 1;
     min-width: 200px;
     text-align: center;
+    overflow: hidden;
 }
 
 /* Responsive Styles */
