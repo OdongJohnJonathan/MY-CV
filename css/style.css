@@ -11,6 +11,10 @@ body {
     background-position: center;
     animation: slideBackground 24s infinite;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 @keyframes slideBackground {
@@ -29,83 +33,70 @@ body {
 }
 
 .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    color: white;
+    max-width: 80%;
 }
 
 .banner-text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0;
 }
 
-.banner-text p {
-    font-size: 1.5rem;
-}
-
-.about-education{
+.about-education {
     background: #fff;
-    height: 50vh;
     width: 90%;
     border-radius: 20px;
     margin: 40px auto;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 20px;
 }
 
-.about-education h2{
-    text-align: center;
+.about-education div {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
 }
 
-.about-education #about{
-    height: 100%;
-    width: 35%;
-    background: #fff;
-}
-
-.about-education #education{
-    height: 100%;
-    width: 35%;
-    background: #fff;
-}
-
-#experience{
-    height: 40vh;
+#experience {
     background: #fff;
     width: 90%;
     margin: 40px auto;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-#experience h2{
+    padding: 20px;
     text-align: center;
-    height: 10%;
-    width: 100%;
-    overflow: hidden;
 }
 
-#experience .mother-exp{
-    height: 90%;
-    width: 100%;
+.mother-exp {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-#experience .mother-exp .child-exp{
-    height: 100%;
-    width: 30%;
-    margin: auto;
-    overflow: hidden;
+.child-exp {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-education {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mother-exp {
+        flex-direction: column;
+        align-items: center;
+    }
 }
